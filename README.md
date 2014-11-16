@@ -1,6 +1,6 @@
-simple-eye-tracker
+Simple Eye Tracker
 ==================
 
-Super-simple API to the Tobii EyeX eye tracker, suitable for binding in scripting languages.
+Super-simple C API to the Tobii EyeX eye tracker, suitable for binding in scripting languages.
 
-To compile, copy into the samples subdirectory of the EyeX SDK and build the Win32 release version.
+To compile the DLL, copy into the samples subdirectory of the EyeX SDK and build the Win32 release version. See Tracker.h for the list of available functions.
