@@ -177,3 +177,11 @@ TRACKER_API bool activate() {
   txReleaseObject(&command);
   return true;
 }
+
+TRACKER_API bool panning_step() {
+  TX_HANDLE command(TX_EMPTY_HANDLE);
+  txCreateActionCommand(hContext, &command, TX_ACTIONTYPE_PANNINGSTEP);
+  txExecuteCommandAsync(command, NULL, NULL);
+  txReleaseObject(&command);
+  return true;
+}

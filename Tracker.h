@@ -16,4 +16,7 @@ extern "C" {
 
   // Equivalent to pressing the activation button.
   TRACKER_API bool activate();
+
+  // Equivalent to pressing the panning button.
+  TRACKER_API bool panning_step();
 }
